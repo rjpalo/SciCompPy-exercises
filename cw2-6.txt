@@ -1,0 +1,20 @@
+cw 2.6
+Find and explain the results.
+
+t = (2, 4)
+
+(1) print(t[2])
+
+wynik: IndexError: tuple index out of range
+przyczyna: licznik zaczyna się od zera, więc 2 = t[0], 4 = t[1]
+
+(2) t.append(6)
+
+wynik: AttributeError: 'tuple' object has no attribute 'append' 
+przyczyna: krotki nie można modyfikować po utworzeniu
+
+(3) a, b = t; print(a, b) 
+
+wynik: 2, 4
+przyczyna: polecenie przyporządkowuje kolejne elementy krotki do podanych
+zmiennych jako wartości

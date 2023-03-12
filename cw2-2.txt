@@ -1,0 +1,31 @@
+cw 2.2
+
+Explain the results.
+
+x = 5
+
+(1) x == 5 and 3                  # 3
+
+'x == 5' jest prawdą, zatem sprawdzane jest drugie wyrażenie i zwracana 
+jest jego wartość (i.e. 3).
+
+(2) x == 4 and 3                  # False
+
+'x == 4' nie jest prawdą, zatem dalsze wyrażenia nie są sprawdzane.
+
+(3) 3 and x == 5                  # True
+(4) 3 and x == 4                  # False
+
+Pierwsze wyrażenie jest zawsze prawdą, bo nie ma zależności do sprawdzenia 
+(i.e. liczba to liczba). W takim razie sprawdzane jest drugie wyrażenie 
+i zwracana jego wartość; w przypadku (3) wartością drugiego wyrażenia jest 
+True, w przypadku (4) natomiast False, zatem takie właśnie wyrażenia dostajemy.
+
+(5) isinstance(True, int)         # True
+(6) isinstance(True, bool)        # True
+
+Klasa 'bool' jest podklasą klasy 'int', zatem 'True' i 'False' są elementami 
+klasy 'int'. Wg dokumentacji Pythona funkcja isinstance zwraca wartość True,
+jeśli badany obiekt należy do badanej klasy lub podklasy tejże klasy, a tak
+jest w tym przypadku.
+
