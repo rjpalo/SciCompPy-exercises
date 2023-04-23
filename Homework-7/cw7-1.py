@@ -53,7 +53,7 @@ class Vector:
         length = math.sqrt(self.x ** 2 + self.y ** 2 + self.z ** 2)
         return length
 
-    def normalize(self): #still on floats, aka not ideal
+    def normalize(self):
         new_x = self.x / self.length()
         new_y = self.y / self.length()
         new_z = self.z / self.length()
